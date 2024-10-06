@@ -1,0 +1,16 @@
+<h1>counter: {{ this.counter }}</h1>
+<div>
+  <button 
+    type="button"
+    (click)="this.decrement()"
+  >-</button>
+  <input 
+    type="number" 
+    [value]="this.counter"
+    (input)="this.setCounter($event, 1)"
+  >
+  <button 
+    type="button"
+    (click)="this.increment()"
+  >+</button>
+</div>
